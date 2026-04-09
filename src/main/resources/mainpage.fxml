@@ -1,1 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.MainPageController">
+
+    <!-- OBEN: Titel -->
+    <top>
+        <Label text="PrivateBank – Accounts"
+               style="-fx-font-size: 20px; -fx-padding: 10;" />
+    </top>
+
+    <!-- MITTE: Liste der Accounts -->
+    <center>
+        <ListView fx:id="accountListView" />
+    </center>
+
+    <!-- UNTEN: Neuer Account Button -->
+    <bottom>
+        <HBox spacing="10" style="-fx-padding: 10;">
+            <Button fx:id="addAccountButton" text="Neuen Account erstellen" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
